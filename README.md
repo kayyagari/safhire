@@ -1,2 +1,4 @@
 # safhire
-SQL on FHIR in Rust
+Safhire(pronounced as Sapphire) is an implementation of SQL on FHIR in Rust lang.
+
+Safhire is currently in private beta. If you are interested to know more, please send an email to [hello@sereen.io](mailto:hello@sereen.io). 
