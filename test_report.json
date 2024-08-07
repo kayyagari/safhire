@@ -1,24 +1,24 @@
 {
   "fn_extension.json": {
-    "results": [
+    "tests": [
       {
         "name": "simple extension",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(code) to value as code"
+          "reason": "change value.ofType(code) to valueCode"
         }
       },
       {
         "name": "nested extension",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(Coding) to value as Coding"
+          "reason": "change value.ofType(Coding) to valueCoding"
         }
       }
     ]
   },
   "view_resource.json": {
-    "results": [
+    "tests": [
       {
         "name": "only pts",
         "result": {
@@ -41,7 +41,7 @@
     ]
   },
   "validate.json": {
-    "results": [
+    "tests": [
       {
         "name": "empty",
         "result": {
@@ -80,19 +80,19 @@
     ]
   },
   "logic.json": {
-    "results": [
+    "tests": [
       {
         "name": "filtering with 'and'",
         "result": {
           "passed": false,
-          "reason": "change deceased.ofType(boolean) to deceased as boolean"
+          "reason": "change deceased.ofType(boolean) to deceasedBoolean"
         }
       },
       {
         "name": "filtering with 'or'",
         "result": {
           "passed": false,
-          "reason": "change deceased.ofType(boolean) to deceased as boolean"
+          "reason": "change deceased.ofType(boolean) to deceasedBoolean"
         }
       },
       {
@@ -104,7 +104,7 @@
     ]
   },
   "basic.json": {
-    "results": [
+    "tests": [
       {
         "name": "basic attribute",
         "result": {
@@ -174,7 +174,7 @@
     ]
   },
   "foreach.json": {
-    "results": [
+    "tests": [
       {
         "name": "forEach: normal",
         "result": {
@@ -256,7 +256,7 @@
     ]
   },
   "fn_first.json": {
-    "results": [
+    "tests": [
       {
         "name": "table level first()",
         "result": {
@@ -272,7 +272,7 @@
     ]
   },
   "fn_reference_keys.json": {
-    "results": [
+    "tests": [
       {
         "name": "getReferenceKey result matches getResourceKey without type specifier",
         "result": {
@@ -294,7 +294,7 @@
     ]
   },
   "fhirpath.json": {
-    "results": [
+    "tests": [
       {
         "name": "one element",
         "result": {
@@ -364,7 +364,7 @@
     ]
   },
   "where.json": {
-    "results": [
+    "tests": [
       {
         "name": "simple where path with result",
         "result": {
@@ -381,14 +381,14 @@
         "name": "where path with greater than inequality",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(integer) to value as integer"
+          "reason": "change value.ofType(integer) to valueInteger"
         }
       },
       {
         "name": "where path with less than inequality",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(integer) to value as integer"
+          "reason": "change value.ofType(integer) to valueInteger"
         }
       },
       {
@@ -418,7 +418,7 @@
     ]
   },
   "fhirpath_numbers.json": {
-    "results": [
+    "tests": [
       {
         "name": "add observation",
         "result": {
@@ -429,7 +429,7 @@
     ]
   },
   "collection.json": {
-    "results": [
+    "tests": [
       {
         "name": "fail when 'collection' is not true",
         "result": {
@@ -458,7 +458,7 @@
     ]
   },
   "constant_types.json": {
-    "results": [
+    "tests": [
       {
         "name": "base64Binary",
         "result": {
@@ -489,28 +489,28 @@
         "name": "decimal",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(Quantity).value to (value as Quantity).value"
+          "reason": "change value.ofType(Quantity).value to valueQuantity.value"
         }
       },
       {
         "name": "id",
         "result": {
           "passed": false,
-          "reason": "change output.first().value.ofType(id) to output.first().value as id"
+          "reason": "change output.first().value.ofType(id) to output.first().valueId"
         }
       },
       {
         "name": "instant",
         "result": {
           "passed": false,
-          "reason": "change effective.ofType(instant) to effective as instant"
+          "reason": "change effective.ofType(instant) to effectiveInstant"
         }
       },
       {
         "name": "oid",
         "result": {
           "passed": false,
-          "reason": "change output.first().value.ofType(oid) to output.first().value as oid"
+          "reason": "change output.first().value.ofType(oid) to output.first().valueOid"
         }
       },
       {
@@ -523,7 +523,7 @@
         "name": "time",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(time) to value as time"
+          "reason": "change value.ofType(time) to valueTime"
         }
       },
       {
@@ -542,20 +542,20 @@
         "name": "url",
         "result": {
           "passed": false,
-          "reason": "change output.first().value.ofType(url) to output.first().value as url"
+          "reason": "change output.first().value.ofType(url) to output.first().valueUrl"
         }
       },
       {
         "name": "uuid",
         "result": {
           "passed": false,
-          "reason": "change output.first().value.ofType(uuid) to output.first().value as uuid"
+          "reason": "change output.first().value.ofType(uuid) to output.first().valueUuid"
         }
       }
     ]
   },
   "constant.json": {
-    "results": [
+    "tests": [
       {
         "name": "constant in path",
         "result": {
@@ -591,7 +591,7 @@
         "name": "boolean constant",
         "result": {
           "passed": false,
-          "reason": "change deceased.ofType(boolean) to deceased as boolean"
+          "reason": "change deceased.ofType(boolean) to deceasedBoolean"
         }
       },
       {
@@ -611,25 +611,25 @@
     ]
   },
   "fn_oftype.json": {
-    "results": [
+    "tests": [
       {
         "name": "select string values",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(string) to value as string"
+          "reason": "change value.ofType(string) to valueString"
         }
       },
       {
         "name": "select integer values",
         "result": {
           "passed": false,
-          "reason": "change value.ofType(integer) to value as integer"
+          "reason": "change value.ofType(integer) to valueInteger"
         }
       }
     ]
   },
   "fn_boundary.json": {
-    "results": [
+    "tests": [
       {
         "name": "decimal lowBoundary",
         "result": {
@@ -689,7 +689,7 @@
     ]
   },
   "fn_empty.json": {
-    "results": [
+    "tests": [
       {
         "name": "empty names",
         "result": {
@@ -699,7 +699,7 @@
     ]
   },
   "fn_join.json": {
-    "results": [
+    "tests": [
       {
         "name": "join with comma",
         "result": {
@@ -721,7 +721,7 @@
     ]
   },
   "combinations.json": {
-    "results": [
+    "tests": [
       {
         "name": "select",
         "result": {
@@ -761,7 +761,7 @@
     ]
   },
   "union.json": {
-    "results": [
+    "tests": [
       {
         "name": "basic",
         "result": {
